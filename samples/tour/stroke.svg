@@ -1,0 +1,112 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20001102//EN" 
+  "http://www.w3.org/TR/2000/CR-SVG-20001102/DTD/svg-20001102.dtd">
+
+<!-- SLIDEHEADER -->
+<svg width="800" height="600">
+
+<!-- ============================================ -->
+<!-- Slide Background                             -->
+<!-- ============================================ -->
+
+<defs>
+  <!-- STYLE -->
+  <style type="text/css"><![CDATA[
+    .title {fill:black; font-size: 50; font-family: Verdana, Helvetica, sans-serif } 
+    .titleshadow {fill:#ccaaaa; font-size: 50; font-family: Verdana, Helvetica, sans-serif } 
+    .normal {fill:black; font-size: 35; font-family: Verdana, Helvetica, sans-serif } 
+    .smaller {fill:black; font-size: 25; font-family: Verdana, Helvetica, sans-serif } 
+    .outercircle {fill:#88aa88 }
+    .innercircle {fill:#555555 }
+    ]]>
+  </style>
+  <!-- ENDSTYLE -->
+  <!-- BACKGRADIENT -->
+  <radialGradient id="radgrad" gradientUnits="objectBoundingBox" cx="10%" cy="90%" fx="10%" fy="90%" r="90%">
+    <stop offset="0%" style="stop-color:#2222aa"/>
+    <stop offset="100%" style="stop-color:#aaaaaa"/>
+  </radialGradient>
+  <!-- ENDBACKGRADIENT -->
+  <!-- NEXTARROW -->
+  <symbol id="arrow" viewBox="0 0 3 3">
+    <path d="M0,1L1.5,1L1.5,0L3,1.5L1.5,3L1.5,2L0,2Z"/>
+  </symbol>
+  <!-- ENDNEXTARROW -->
+</defs>
+
+<g>
+
+  <!-- BACKGROUND -->
+  <rect style="fill:url(#radgrad); stroke:#000000; stroke-width: 4" x="2" y="2" width="796" height="596"/>
+  <!-- ENDBACKGROUND -->
+  <!-- LOGO -->
+  <image x="710" y="10" width="80" height="100" xlink:href="csiro.svg"/>
+  <!-- ENDLOGO -->
+  <!-- URL -->
+  <text x="10" y="590" style="fill:#000000; font-family: Verdana; font-size:25">
+  http://www.cmis.csiro.au/svg
+  </text>
+  <!-- ENDURL -->
+
+  <!-- ARROWLINK -->
+  <a xlink:href="fill.svg">
+    <use x="753" y="560" width="50" height="35" style="fill:#993333;stroke:#000000;stroke-width:0.1" xlink:href="#arrow"/>
+  </a>
+  <!-- ENDARROWLINK -->
+</g>
+
+<!-- ENDSLIDEHEADER -->
+
+<!-- ============================================ -->
+<!-- Slide Body                                   -->
+<!-- ============================================ -->
+
+<g>
+
+<text x="33" y="83" class="titleshadow">Strokes</text>
+<text x="30" y="80" class="title">Strokes</text>
+
+<rect x="110" y="120" width="180" height="150" style="stroke:#222222; stroke-width: 8; fill:none; stroke-linejoin: round"/>
+<rect x="125" y="135" width="150" height="120" style="stroke:#555555; stroke-width: 5; fill:#5588aa;"/>
+<rect x="140" y="150" width="120" height="90" style="stroke:#222222; stroke-width: 3; fill:none"/>
+<rect x="155" y="165" width="90" height="60" style="stroke:#883333; stroke-width: 1; fill:#5588aa;"/>
+
+<text x="160" y="310" class="smaller">width</text>
+
+
+<circle cx="400" cy="190" r="80" style="stroke:#22222; stroke-width: 8; fill:#aaaaaa; stroke-dasharray: 6 6;"/>
+<circle cx="400" cy="190" r="60" style="stroke:#555555; stroke-width: 6; fill:#5588aa; stroke-dasharray: 6 3 3 3;"/>
+<rect x="370" y="160" width="60" height="60" style="stroke:#222222; stroke-width: 6; fill:none; stroke-dasharray: 3 5;"/>
+<text x="370" y="310" class="smaller">dash</text>
+
+
+<ellipse cx="600" cy="200" rx="90" ry="60" style="stroke:none; fill:#5599cc"/>
+<ellipse cx="630" cy="180" rx="40" ry="60" style="stroke:#cc3333; stroke-width: 10; fill:none; stroke-opacity:0.5;"/>
+<text x="555" y="310" class="smaller">opacity</text>
+
+<polyline style="stroke:#222222; stroke-width: 15; fill:none; stroke-linecap: round"
+ points="120,490 150,390 180,490"/>
+<polyline style="stroke:#222222; stroke-width: 15; fill:none; stroke-linecap: square; stroke-miterlimit: 1"
+ points="210,460 240,360 270,460"/>
+<text x="160" y="530" class="smaller">linecap</text>
+
+<linearGradient id="grad1" x1="300" y1="300" x2="500" y2="500">
+  <stop style="stop-color:black" offset="0" />
+  <stop style="stop-color:blue" offset="0.25" />
+  <stop style="stop-color:green" offset="0.5" />
+  <stop style="stop-color:rgb(215,177,1)" offset="0.75" />
+  <stop style="stop-color:red" offset="1" />
+</linearGradient>
+
+<polygon points="440,350 360,350 330,380 330,460 360,490 440,490 470,460 470,380" style="stroke:url(#grad1); stroke-width: 15; fill:none"/>
+<text x="350" y="530" class="smaller">gradient</text>
+
+
+
+<text x="530" y="490" style="font-family: serif; font-size:180; fill:none; stroke:#222222; stroke-width:3">a</text>
+<text x="610" y="440" style="font-family: 'Comic Sans MS', sans-serif; font-size:140; fill:none; stroke:#222277; stroke-width:5">G</text>
+<text x="560" y="530" class="smaller">text</text>
+
+</g>
+
+</svg>

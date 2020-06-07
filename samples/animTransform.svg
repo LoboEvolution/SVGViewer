@@ -1,0 +1,72 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20001102//EN" 
+  "http://www.w3.org/TR/2000/CR-SVG-20001102/DTD/svg-20001102.dtd">
+
+<svg width="20cm" height="20cm" viewBox="0,0,800,800">
+ 
+    <text x="200" y="200"
+          style="font-family:Verdana; font-size:35.27" > 
+      Rotate
+      <animateTransform attributeName="transform" attributeType="XML"
+           type="rotate" from="-180,200,200" to="180,200,200"
+           begin="0s" dur="15s" fill="freeze" />
+    </text>
+
+    <text x="200" y="200"
+          style="font-family:Verdana; font-size:35.27;fill:red" > 
+      Scale
+      <animateTransform attributeName="transform" attributeType="XML"
+           type="scale" from="0.5" to="3" additive="sum"
+           begin="0s" dur="15s" fill="freeze" />
+    </text>
+
+    <text x="200" y="200"
+          style="font-family:Verdana; font-size:35.27;fill:green" > 
+      Translate
+      <animateTransform attributeName="transform" attributeType="XML"
+           type="translate" from="-200,-200" to="300,300" additive="sum"
+           begin="0s" dur="15s" fill="freeze" />
+    </text>
+
+    <text x="200" y="200"
+          style="font-family:Verdana; font-size:35.27;fill:orange" > 
+      SkewX
+      <animateTransform attributeName="transform" attributeType="XML"
+           type="skewX" from="-60" to="60" additive="sum"
+           begin="0s" dur="15s" fill="freeze" />
+    </text>
+
+    <text x="200" y="200"
+          style="font-family:Verdana; font-size:35.27;fill:blue" > 
+      SkewY
+      <animateTransform attributeName="transform" attributeType="XML"
+           type="skewY" from="-60" to="60" additive="sum"
+           begin="0s" dur="15s" fill="freeze" />
+    </text>
+
+
+    <text x="200" y="200"
+          style="font-family:Verdana; font-size:35.27;fill:purple" > 
+      RotateScale
+      <animateTransform attributeName="transform" attributeType="XML"
+           type="rotate" from="-45" to="45" additive="sum"
+           begin="0s" dur="15s" fill="freeze" />
+      <animateTransform attributeName="transform" attributeType="XML"
+           type="scale" from="0.25" to="2" additive="sum"
+           begin="0s" dur="15s" fill="freeze" />
+    </text>
+
+
+   <text x="200" y="200"
+          style="font-family:Verdana; font-size:35.27;fill:brown" > 
+      Values
+      <animateTransform attributeName="transform" attributeType="XML"
+           type="rotate" 
+           values="-180,200,200;-135,200,200;-90,200,200;-45,200,200;0,200,200;45,200,200;90,200,200;135,200,200;180,200,200" 
+           keyTimes="0;0.125;0.25;0.375;0.5;0.625;0.75;0.875;1"
+           begin="0s" dur="15s" fill="freeze" calcMode="discrete" />
+    </text>
+
+
+
+</svg>

@@ -1,0 +1,13 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20001102//EN" 
+  "http://www.w3.org/TR/2000/CR-SVG-20001102/DTD/svg-20001102.dtd">
+
+<svg width="800" height="800">
+  <image x="50" y="50" width="400" height="400" xlink:href="picasso.svg">
+
+    <animate attributeName="xlink:href" begin="0s" dur="60s"
+      values="picasso.svg;animRect.svg;arabicbold.svg;arc.svg;csiro.svg;groupOpacity.svg;duke.svg;radial.svg;lion.svg;tiger.svg;rototext.svg"
+      keyTimes="0;0.1;0.2;0.3;0.4;0.5;0.6;0.7;0.8;0.9;1" repeatCount="3"/>
+
+  </image>
+</svg>

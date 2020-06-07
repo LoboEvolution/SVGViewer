@@ -1,0 +1,126 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20001102//EN" 
+  "http://www.w3.org/TR/2000/CR-SVG-20001102/DTD/svg-20001102.dtd">
+
+<svg width="25cm" height="20cm" viewBox="-100,-200,2000,2000"> 
+
+<g>
+	<circle cx="300" cy="500" r="550" style="fill:lightyellow; stroke:yellow; stroke-width:20" />
+</g>
+<g>
+  <path d="M300,600 a150,150 0 1,0 150,-150 "
+	style="fill:none; stroke:blue; stroke-width:10" />
+  <path d="M450,450 a150,150 0 1,0 150,-150 "
+	style="fill:none; stroke:purple; stroke-width:10" />
+  <path d="M600,300 a150,150 0 1,0 150,-150 "
+	style="fill:none; stroke:red; stroke-width:10" />
+  <path d="M750,150 a150,150 0 1,0 150,-150 "
+	style="fill:none; stroke:orange; stroke-width:10" />
+</g>     
+
+<g >
+  <path d="M-25,12.5 L25,12.5 L 0,87.5 z" style="fill:black; stroke:black; stroke-width:1" > 
+	<animateMotion begin="4s" dur="8s" repeatCount="1" fill="freeze"
+		path="M300,600 a150,150 0 1,0 150,-150 a150,150 0 1,0 150,-150 a150,150 0 1,0 150,-150 a150,150 0 1,0 150,-150
+			 a150,150 0 1,1 -150,150 a150,150 0 1,1 -150,150 a150,150 0 1,1 -150,150 a150,150 0 1,1 -150,150" 
+			 rotate="auto-reverse" />
+  </path>
+</g>
+<!--
+<g >
+  <path d="M40,200 c10,20 20,25 20,10 s80,60 80,40 A25,25 0 1,0 -25,25 S80,40 80,60 Q80,100 120,60 T100,50 q40,120 140,20 t50,75" 
+		style="fill:none; stroke:green; stroke-width:5" />
+</g>
+
+<g>
+  <path d="M-10,5 L10,5 L 0,35 z" style="fill:green; stroke:green; stroke-width:1" > 
+      <animateMotion begin="0s" dur="4s" repeatCount="1" fill="freeze" 
+		path="M40,200 c10,20 20,25 20,10 s80,60 80,40 A25,25 0 1,0 -25,25 S80,40 80,60 Q80,100 120,60 T100,50 q40,120 140,20 t50,75" rotate="auto" />
+  </path>
+</g>
+-->
+
+<!--<g>
+	<path d="M100,200 C100,100 250,100 250,200 S400,300 400,200 L0,400 C0,100 -150,100 -150,200 S-200,300 -200,200 " style="fill:none; stroke:red; stroke-width:5" />
+</g>
+<g>
+  <circle cx="10" cy="10" r="10" style="fill:purple; stroke:purple; stroke-width:0.05" />
+      <animateMotion begin="0s" dur="4s" repeatCount="1" fill="freeze" 
+		path="M100,200 C100,100 250,100 250,200 S400,300 400,200 L0,400 C0,100 -150,100 -150,200 S-200,300 -200,200 " rotate="auto" />
+</g>
+-->
+<!-- Flowers -->
+<g transform="translate(0,200)">
+	<rect x="50" y="50" width="10" height="250" style="fill:green; stroke:green; stroke-width:5"/>
+	<circle cx="50" cy="0" r="45" style="fill:pink; stroke:none" />
+	<circle cx="100" cy="50" r="45" style="fill:pink; stroke:none" />
+	<circle cx="50" cy="100" r="45" style="fill:pink; stroke:none" />
+	<circle cx="0" cy="50" r="45" style="fill:pink; stroke:none" />
+	<circle cx="50" cy="50" r="45" style="fill:red; stroke:none" />
+</g>
+<g transform="translate(150,200)">
+	<rect x="50" y="50" width="10" height="250" style="fill:green; stroke:green; stroke-width:5"/>
+	<circle cx="50" cy="0" r="45" style="fill:lightblue; stroke:none" />
+	<circle cx="100" cy="50" r="45" style="fill:lightblue; stroke:none" />
+	<circle cx="50" cy="100" r="45" style="fill:lightblue; stroke:none" />
+	<circle cx="0" cy="50" r="45" style="fill:lightblue; stroke:none" />
+	<circle cx="50" cy="50" r="45" style="fill:blue; stroke:none" />
+</g>
+<g transform="translate(-175,200)">
+	<rect x="50" y="50" width="10" height="250" style="fill:green; stroke:green; stroke-width:5"/>
+	<circle cx="50" cy="0" r="45" style="fill:lightblue; stroke:none" />
+	<circle cx="100" cy="50" r="45" style="fill:lightblue; stroke:none" />
+	<circle cx="50" cy="100" r="45" style="fill:lightblue; stroke:none" />
+	<circle cx="0" cy="50" r="45" style="fill:lightblue; stroke:none" />
+	<circle cx="50" cy="50" r="45" style="fill:blue; stroke:none" />
+</g>
+
+<!-- bee -->
+<g>
+	<ellipse transform="translate(0,0) rotate(30)" rx="10" ry="45" style="fill:orange; stroke:orange; stroke-width:0.01" />
+	<ellipse rx="50" ry="20" style="fill:orange; stroke:orange; stroke-width:0.1" />
+	<rect x="0" y="-20" width="10" height="40" style="fill:black; stroke:none" />
+      <rect x="-20" y="-17" width="10" height="35" style="fill:black; stroke:none" />
+      <rect x="20" y="-17" width="10" height="35" style="fill:black; stroke:none" />
+ 	<circle cx="-30" cy="0" r="5" style="fill:black; stroke:none" />
+	<rect transform="translate(0,-40) rotate(-30)" x="-35" y="-15" width="3" height="25" style="fill:black; stroke:none" />
+	<rect transform="translate(10,-10) rotate(30)" x="-35" y="-15" width="3" height="25" style="fill:black; stroke:none" />
+	<animateMotion begin="0s" dur="4s" repeatCount="1" fill="freeze" 
+		path="M600,200 C350,100 350,100 200,200 S200,300 200,200 L0,400 C10,100 -50,100 -50,200 S-100,300 -100,200 "  />
+</g>
+
+<!-- Bouncing circle -->
+<g>
+	<circle cx="50" cy="0" r="45" style="fill:red; stroke:none" />
+	<animateMotion begin="0s" dur="10s" fill="freeze" 
+		values="10,-100;900,900;200,900;700,340;400,-100;500,900;1100,500;100,900;500,500;900,90;-200,340;-150,1000" 
+			keyTimes="0;0.1;0.15;0.2;0.3;0.4;0.5;0.6;0.7;0.8;0.9;1" calcMode="discrete"/>
+</g>
+
+<!-- Animated Text -->
+<g>
+	<text x="23" y="13" style="font-family:Pristina; font-size:26; fill:lightblue; visibility:hidden">
+		Animated Motion
+      	<set attributeName="visibility" attributeType="CSS" to="visible"
+	          begin="0s" dur="6s" fill="freeze" />
+		<animateMotion begin="0s" dur="6s" path="M25,15 L600,600 600,15 -325,-50" fill="freeze" />
+		<animateTransform attributeName="transform" attributeType="XML"
+           		type="scale" from="1" to="6" additive="sum"
+		      begin="0s" dur="6s" fill="freeze" />
+
+	</text>
+</g>
+
+<g>
+	<text x="25" y="15" style="font-family:Pristina; font-size:26; fill:blue; visibility:hidden">
+		Animated Motion
+      	<set attributeName="visibility" attributeType="CSS" to="visible"
+	          begin="0s" dur="6s" fill="freeze" />
+		<animateMotion begin="0s" dur="6s" path="M25,15 L600,600 600,15 -325,-50" fill="freeze" />
+		<animateTransform attributeName="transform" attributeType="XML"
+           		type="scale" from="1" to="6" additive="sum"
+		      begin="0s" dur="6s" fill="freeze" />
+
+	</text>
+</g>
+</svg>

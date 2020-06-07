@@ -1,0 +1,250 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20001102//EN" 
+  "http://www.w3.org/TR/2000/CR-SVG-20001102/DTD/svg-20001102.dtd">
+
+<!-- SLIDEHEADER -->
+<svg width="800" height="600" onload="on_load(evt)" onunload="timer.clearInterval()">
+
+<defs>
+  <!-- STYLE -->
+  <style type="text/css"><![CDATA[
+    .title {fill:black; font-size: 50; font-family: Verdana, Helvetica, sans-serif } 
+    .titleshadow {fill:#ccaaaa; font-size: 50; font-family: Verdana, Helvetica, sans-serif } 
+    .normal {fill:black; font-size: 35; font-family: Verdana, Helvetica, sans-serif } 
+    .smaller {fill:black; font-size: 25; font-family: Verdana, Helvetica, sans-serif } 
+    .outercircle {fill:#88aa88 }
+    .innercircle {fill:#555555 }
+    ]]>
+  </style>
+  <!-- ENDSTYLE -->
+  <!-- BACKGRADIENT -->
+  <radialGradient id="radgrad" gradientUnits="objectBoundingBox" cx="10%" cy="90%" fx="10%" fy="90%" r="90%">
+    <stop offset="0%" style="stop-color:#2222aa"/>
+    <stop offset="100%" style="stop-color:#aaaaaa"/>
+  </radialGradient>
+  <!-- ENDBACKGRADIENT -->
+  <!-- NEXTARROW -->
+  <symbol id="arrow" viewBox="0 0 3 3">
+    <path d="M0,1L1.5,1L1.5,0L3,1.5L1.5,3L1.5,2L0,2Z"/>
+  </symbol>
+  <!-- ENDNEXTARROW -->
+</defs>
+
+<script type="text\ecmascript" ><![CDATA[
+
+  var NUMPTS = 4;
+  var animpt1a = (Math.random() * 550);  
+  var animpt1b = (Math.random() * 300);  
+  var animpt2a = (Math.random() * 550);  
+  var animpt2b = (Math.random() * 300);
+  var animpt3a = (Math.random() * 550);
+  var animpt3b = (Math.random() * 300);
+  var animpt4a = (Math.random() * 550);
+  var animpt4b = (Math.random() * 300);
+  var delta1a = (Math.random() * 6.0 + 4.0);  
+  var delta1b = (Math.random() * 6.0 + 4.0);  
+  var delta2a = (Math.random() * 6.0 + 4.0);  
+  var delta2b = (Math.random() * 6.0 + 4.0);  
+  var delta3a = (Math.random() * 6.0 + 4.0);  
+  var delta3b = (Math.random() * 6.0 + 4.0);  
+  var delta4a = (Math.random() * 6.0 + 4.0);  
+  var delta4b = (Math.random() * 6.0 + 4.0);  
+
+	/*
+	* This function is called when the document is first loaded.
+	* It sets a time-interval to repeatedly call the main animation function
+	* at constant intervals.
+	*
+	* Note that next_frame() is really called through the safecall
+	* function (see end of this script block) to avoid an intermittent
+	* JavaScript error during page unloading. The error occurs when the
+	* animation function is called between the time the SVG document is
+	* unloaded and the HTML page is unloaded. During this time, the
+	* setInterval() function is still in effect, but the DOM access to the
+	* SVG document has been removed, so the animation function is called but
+	* generates an error when accessing the SVG document.
+	*/
+	function on_load (evt)
+	{
+		// This is needed for MSIE to expose the safecall function to
+		// the global setInterval function.
+		//window.safecall = safecall;
+
+		// Save a pointer to the svgDocument object so that we can use it to
+		// retrieve various named elements in the svg document.
+		//svgdoc = evt.getCurrentNode().getOwnerDocument();
+		svgdoc = document;
+
+		// Start the animation loop.
+		//setInterval ('safecall("next_frame()")', 100);
+		timer.setInterval ('next_frame()', 100);
+		//timer.setInterval ('safecall("next_frame()")', 1000);
+	}
+
+	function next_frame ()
+	{
+		// Retrieve handle to the path being animated.
+		var linenode = svgdoc.getElementById ('doodle');
+		if (!linenode)
+			return;
+
+                var newpt = 0.0;
+
+		newpt = animpt1a + delta1a;
+                if (newpt <= 0) {
+                  newpt = -newpt;
+                  delta1a = (Math.random() * 4.0 + 2.0);
+                } else if (newpt >= 550) {
+                  newpt = 2.0 * 550 - newpt;
+                  delta1a = - 1.0 * (Math.random() * 4.0 + 2.0);
+                }
+                animpt1a = newpt;
+
+		newpt = animpt1b + delta1b;
+                if (newpt <= 0) {
+                  newpt = -newpt;
+                  delta1b = (Math.random() * 4.0 + 2.0);
+                } else if (newpt >= 300) {
+                  newpt = 2.0 * 300 - newpt;
+                  delta1b = - 1.0 * (Math.random() * 4.0 + 2.0);
+                }
+                animpt1b = newpt;
+
+		newpt = animpt2a + delta2a;
+                if (newpt <= 0) {
+                  newpt = -newpt;
+                  delta2a = (Math.random() * 4.0 + 2.0);
+                } else if (newpt >= 550) {
+                  newpt = 2.0 * 550 - newpt;
+                  delta2a = - 1.0 * (Math.random() * 4.0 + 2.0);
+                }
+                animpt2a = newpt;
+
+		newpt = animpt2b + delta2b;
+                if (newpt <= 0) {
+                  newpt = -newpt;
+                  delta2b = (Math.random() * 4.0 + 2.0);
+                } else if (newpt >= 300) {
+                  newpt = 2.0 * 300 - newpt;
+                  delta2b = - 1.0 * (Math.random() * 4.0 + 2.0);
+                }
+                animpt2b = newpt;
+
+		newpt = animpt3a + delta3a;
+                if (newpt <= 0) {
+                  newpt = -newpt;
+                  delta3a = (Math.random() * 4.0 + 2.0);
+                } else if (newpt >= 550) {
+                  newpt = 2.0 * 550 - newpt;
+                  delta3a = - 1.0 * (Math.random() * 4.0 + 2.0);
+                }
+                animpt3a = newpt;
+
+		newpt = animpt3b + delta3b;
+                if (newpt <= 0) {
+                  newpt = -newpt;
+                  delta3b = (Math.random() * 4.0 + 2.0);
+                } else if (newpt >= 300) {
+                  newpt = 2.0 * 300 - newpt;
+                  delta13b = - 1.0 * (Math.random() * 4.0 + 2.0);
+                }
+                animpt3b = newpt;
+
+		newpt = animpt4a + delta4a;
+                if (newpt <= 0) {
+                  newpt = -newpt;
+                  delta4a = (Math.random() * 4.0 + 2.0);
+                } else if (newpt >= 550) {
+                  newpt = 2.0 * 550 - newpt;
+                  delta4a = - 1.0 * (Math.random() * 4.0 + 2.0);
+                }
+                animpt4a = newpt;
+
+		newpt = animpt4b + delta4b;
+                if (newpt <= 0) {
+                  newpt = -newpt;
+                  delta4b = (Math.random() * 4.0 + 2.0);
+                } else if (newpt >= 300) {
+                  newpt = 2.0 * 300 - newpt;
+                  delta4b = - 1.0 * (Math.random() * 4.0 + 2.0);
+                }
+                animpt1b = newpt;
+
+
+		// Change the path element's "d" attribute to use the new coordinates.
+		linenode.setAttribute ('d', 'M' + animpt1a + ',' + animpt1b + 'L' + animpt2a + ',' + animpt2b + 'L' + animpt3a + ',' + animpt3b + 'L' + animpt4a + ',' + animpt4b + ' z');
+	}
+
+	/*
+	* This function executes the input statement while suppressing any JavaScript
+	* errors that might occur. The global variable safecall_has_error is set to
+	* true if an error does occur
+	*/
+	function safecall (stmt)
+	{
+		//var old_error = window.onerror;
+		//window.onerror = safecall_suppress_errors;
+		eval (stmt);
+		//window.onerror = old_error;
+	}
+
+	/*
+	* This function is called to suppress javascript error messages when it is
+	* known that the errors are not real problems.
+	*/
+	function safecall_suppress_errors ()
+	{
+		return true;
+	}
+]]></script>
+
+<!-- ============================================ -->
+<!-- Slide Background                             -->
+<!-- ============================================ -->
+
+
+<g>
+
+  <!-- BACKGROUND -->
+  <rect style="fill:url(#radgrad); stroke:#000000; stroke-width: 4" x="2" y="2" width="796" height="596"/>
+  <!-- ENDBACKGROUND -->
+  <!-- LOGO -->
+  <image x="710" y="10" width="80" height="100" xlink:href="csiro.svg"/>
+  <!-- ENDLOGO -->
+  <!-- URL -->
+  <text x="10" y="590" style="fill:#000000; font-family: Verdana; font-size:25">
+  http://www.cmis.csiro.au/svg
+  </text>
+  <!-- ENDURL -->
+
+  <!-- ARROWLINK -->
+  <a xlink:href="script2.svg">
+    <use x="753" y="560" width="50" height="35" style="fill:#993333;stroke:#000000;stroke-width:0.1" xlink:href="#arrow"/>
+  </a>
+  <!-- ENDARROWLINK -->
+</g>
+
+<!-- ENDSLIDEHEADER -->
+
+<!-- ============================================ -->
+<!-- Slide Body                                   -->
+<!-- ============================================ -->
+
+<g>
+
+<text x="33" y="83" class="titleshadow">Scripted Animation</text>
+<text x="30" y="80" class="title">Scripted Animation</text>
+
+<linearGradient id="grad1"  x1="0" y1="0" x2="200" y2="200" spreadMethod="reflect">
+  <stop style="stop-color:#2255aa" offset="0" />
+  <stop style="stop-color:#aa8855" offset="0.5" />
+  <stop style="stop-color:#55aa55" offset="1" />
+</linearGradient>
+
+<path id="doodle" style="fill:rgb(200,200,230);stroke:#9055aa; stroke-width:4" d="M 0,300Z" transform="translate(50, 100)"/>
+
+
+
+</g>
+
+</svg>

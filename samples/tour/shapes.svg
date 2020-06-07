@@ -1,0 +1,98 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20001102//EN" 
+  "http://www.w3.org/TR/2000/CR-SVG-20001102/DTD/svg-20001102.dtd">
+
+<!-- SLIDEHEADER -->
+<svg width="800" height="600">
+
+<!-- ============================================ -->
+<!-- Slide Background                             -->
+<!-- ============================================ -->
+
+<defs>
+  <!-- STYLE -->
+  <style type="text/css"><![CDATA[
+    .title {fill:black; font-size: 50; font-family: Verdana, Helvetica, sans-serif } 
+    .titleshadow {fill:#ccaaaa; font-size: 50; font-family: Verdana, Helvetica, sans-serif } 
+    .normal {fill:black; font-size: 35; font-family: Verdana, Helvetica, sans-serif } 
+    .smaller {fill:black; font-size: 25; font-family: Verdana, Helvetica, sans-serif } 
+    .outercircle {fill:#88aa88 }
+    .innercircle {fill:#555555 }
+    ]]>
+  </style>
+  <!-- ENDSTYLE -->
+  <!-- BACKGRADIENT -->
+  <radialGradient id="radgrad" gradientUnits="objectBoundingBox" cx="10%" cy="90%" fx="10%" fy="90%" r="90%">
+    <stop offset="0%" style="stop-color:#2222aa"/>
+    <stop offset="100%" style="stop-color:#aaaaaa"/>
+  </radialGradient>
+  <!-- ENDBACKGRADIENT -->
+  <!-- NEXTARROW -->
+  <symbol id="arrow" viewBox="0 0 3 3">
+    <path d="M0,1L1.5,1L1.5,0L3,1.5L1.5,3L1.5,2L0,2Z"/>
+  </symbol>
+  <!-- ENDNEXTARROW -->
+</defs>
+
+<g>
+
+  <!-- BACKGROUND -->
+  <rect style="fill:url(#radgrad); stroke:#000000; stroke-width: 4" x="2" y="2" width="796" height="596"/>
+  <!-- ENDBACKGROUND -->
+  <!-- LOGO -->
+  <image x="710" y="10" width="80" height="100" xlink:href="csiro.svg"/>
+  <!-- ENDLOGO -->
+  <!-- URL -->
+  <text x="10" y="590" style="fill:#000000; font-family: Verdana; font-size:25">
+  http://www.cmis.csiro.au/svg
+  </text>
+  <!-- ENDURL -->
+
+  <!-- ARROWLINK -->
+  <a xlink:href="paths.svg">
+    <use x="753" y="560" width="50" height="35" style="fill:#993333;stroke:#000000;stroke-width:0.1" xlink:href="#arrow"/>
+  </a>
+  <!-- ENDARROWLINK -->
+</g>
+
+<!-- ENDSLIDEHEADER -->
+
+<!-- ============================================ -->
+<!-- Slide Body                                   -->
+<!-- ============================================ -->
+
+<g>
+
+<text x="33" y="83" class="titleshadow">Basic Shapes</text>
+<text x="30" y="80" class="title">Basic Shapes</text>
+
+<rect x="110" y="120" width="180" height="150" style="stroke:#333333; stroke-width: 8; fill:#aaaaaa"/>
+<rect x="150" y="140" width="100" height="70" rx="15" style="stroke:#555555; stroke-width: 6; fill:#558855;"/>
+<text x="140" y="310" class="smaller">rectangle</text>
+
+
+<circle cx="400" cy="200" r="70" style="stroke:#333333; stroke-width: 8; fill:#aaaaaa"/>
+<circle cx="380" cy="210" r="30" style="stroke:#555555; stroke-width: 6; fill:#558855;"/>
+<text x="370" y="310" class="smaller">circle</text>
+
+
+<ellipse cx="600" cy="200" rx="90" ry="60" style="stroke:#333333; stroke-width: 8; fill:#aaaaaa"/>
+<ellipse cx="630" cy="200" rx="20" ry="40" style="stroke:#555555; stroke-width: 6; fill:#558855;"/>
+<text x="560" y="310" class="smaller">ellipse</text>
+
+<line x1="130" y1="470" x2="270" y2="330" style="stroke:#333333; stroke-width: 8; fill:#aaaaaa"/>
+<line x1="120" y1="360" x2="220" y2="460" style="stroke:#555555; stroke-width: 6;"/>
+<line x1="180" y1="360" x2="280" y2="460" style="stroke:#558855; stroke-width: 6;"/>
+<text x="170" y="510" class="smaller">line</text>
+
+<polyline points="450,330 400,340 310,400 350,490 490,420 460,380 380,380 390,410" style="fill:none; stroke:#333333; stroke-width: 8"/>
+<text x="370" y="510" class="smaller">polyline</text>
+
+
+<polygon points="640,330 560,330 530,360 530,440 560,470 640,470 670,440 670,360" style="stroke:#333333; stroke-width: 8; fill:#aaaaaa"/>
+<polygon points="590,390 550,400 590,410 600,450 610,410 650,400 610,390 600,350 590,390" style="stroke:#555555; stroke-width: 6; fill:#558855;"/>
+<text x="560" y="510" class="smaller">polygon</text>
+
+</g>
+
+</svg>

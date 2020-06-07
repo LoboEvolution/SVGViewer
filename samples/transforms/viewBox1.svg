@@ -1,0 +1,23 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20001102//EN" 
+  "http://www.w3.org/TR/2000/CR-SVG-20001102/DTD/svg-20001102.dtd">
+
+<svg width="300px" height="200px"
+     viewBox="0 0 1500 1000" preserveAspectRatio="none" >
+  <title>ViewBox1</title>
+  <desc>Example ViewBox1 - uses the viewBox
+        attribute to automatically create an initial user coordinate
+        system which causes the graphic to scale to fit into the
+        viewport no matter what size the viewport is.</desc>
+  <!-- This rectangle goes from (0,0) to (1500,1000) in user space.
+       Because of the viewBox attribute above,
+       the rectangle will end up filling the entire area
+       reserved for the SVG content. -->
+  <rect x="0" y="0" width="1500" height="1000" style="fill:yellow" />
+  <!-- A large, red triangle -->
+  <path style="fill:red" d="M 750,100 L 250,900 L 1250,900 z"/>
+  <!-- A text string that spans most of the viewport -->
+  <text x="100" y="600" style="font-size:180; font-family:Verdana">
+    Stretch to fit
+  </text>
+</svg>

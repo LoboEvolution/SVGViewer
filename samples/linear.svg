@@ -1,0 +1,28 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20001102//EN" 
+  "http://www.w3.org/TR/2000/CR-SVG-20001102/DTD/svg-20001102.dtd">
+
+<svg width="600" height="600">
+
+  <defs>
+
+	<linearGradient id="MyLinearGradient"
+                      x1="40%" y1="40%" x2="60%" y2="60%"
+                      spreadMethod="reflect"
+                      gradientTransform="rotate(20,250,250)skewX(30)skewY(-30)scale(0.5)">
+
+		<stop offset="0%"   style="stop-color:#FF0000; stop-opacity:0.2"/>
+        	<stop offset="25%"  style="stop-color:#0000FF; stop-opacity:0.4"/>
+        	<stop offset="50%"  style="stop-color:#00FF00; stop-opacity:0.6"/>
+        	<stop offset="75%"  style="stop-color:#0000FF; stop-opacity:0.8"/>
+        	<stop offset="100%" style="stop-color:#F0F000; stop-opacity:1"/>
+	</linearGradient>
+
+  </defs>
+
+  <title>Linear gradient painting
+  </title> 
+  <line x1="80" y1="80" x2="520" y2="520" style="stroke:black; stroke-width:10" />
+  <rect x="100" y="100" width="400" height="400" style="fill:url(#MyLinearGradient)"/>
+ 
+</svg>

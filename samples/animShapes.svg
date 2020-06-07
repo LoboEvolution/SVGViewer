@@ -1,0 +1,62 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20001102//EN" 
+  "http://www.w3.org/TR/2000/CR-SVG-20001102/DTD/svg-20001102.dtd">
+
+<svg width="600" height="600" style="fill:none">
+
+  <defs>
+    <marker id="Triangle"
+		viewBox="0 0 10 10" refX="5" refY="5"
+		markerWidth="4" markerHeight="4"
+		orient="auto">
+	<path id = "mypath" d="M 0 0 L 10 5 L 0 10 z" style="fill:black; stroke:red; stroke-width:2; 
+                 stroke-dasharray:none; marker:url(#Circle);"/>
+    </marker>
+
+    <marker id="Circle"
+            viewBox="0 0 10 10" refX="5" refY="5"
+            markerWidth="5" markerHeight="5"
+            orient="auto">
+      <circle cx="5" cy="5" r="5" style="fill:none; stroke-width:2; stroke:blue; stroke-dasharray:none"/>
+    </marker>
+
+    <marker id="Square" viewBox="0 0 20 20" refX="10" refY="10"
+            markerWidth="3" markerHeight="3"
+            orient="auto">
+      <rect x ="0" y="0" width="20" height="20" style="fill:teal; stroke:none"/>
+      <animate attributeName="orient" attributeType="XML"
+         from="0rad" to="360deg" begin="0s" dur="9s" repeatCount="1.5"/>
+    </marker>
+      
+
+  </defs>
+
+  <title> Simple shapes </title>
+  
+  <rect x = "120" y="120" width="100" height="150" style="fill:blue; stroke:black; stroke-width:4; stroke-linejoin:round" />
+
+  <circle cx="300" cy="400" r="50" style="fill:rgb(50%,75%,100%); stroke:navy; stroke-width:2; stroke-dasharray: 5 2" />
+
+  <ellipse cx="450" cy="200" rx="50" ry="100" style="fill:#bc1203; stroke:none"/>
+
+  <polyline points="100 100 150 100 150 150 200 150 200 200 250 200 250 250 300 250 300 300 350 300 350 350 
+                    400 350 400 400 450 400 450 450 500 450 500 500" 
+            style="stroke:lime; stroke-width: 3; stroke-linejoin: round; stroke-linecap:round; stroke-opacity:0.5;
+                   marker-start:url(#Circle);marker-mid:url(#Square);marker-end:url(#Triangle)" >
+     <animate attributeName="points" attributeType="XML" 
+              begin="0s" dur="9s" fill="freeze" repeatCount="1.5"
+              from="100 100 150 100 150 150 200 150 200 200 250 200 250 250 300 250 300 300 350 300 350 350 
+                    400 350 400 400 450 400 450 450 500 450 500 500" 
+              to="100 500 150 500 150 450 200 450 200 400 250 400 250 350 300 350 300 300 350 300 350 250 
+                    400 250 400 200 450 200 450 150 500 150 500 100" />
+  </polyline>
+
+
+  <polygon points="50 100 100 50 500 50 550 100 550 500 500 550 100 550 50 500" 
+            style="stroke:aqua; stroke-width: 15; stroke-linejoin:round" />
+
+  <line x1="100" x2="500" y1="500" y2="100" 
+            style="stroke:rgb(255,255,0); stroke-width:8; stroke-dasharray: 5 5 10 5 15 5 10 5;
+                     marker-start:url(#Circle);marker-end:url(#Triangle)"   />
+
+</svg>

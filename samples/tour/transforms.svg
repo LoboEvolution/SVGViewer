@@ -1,0 +1,131 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20001102//EN" 
+  "http://www.w3.org/TR/2000/CR-SVG-20001102/DTD/svg-20001102.dtd">
+
+<!-- SLIDEHEADER -->
+<svg width="800" height="600">
+
+<!-- ============================================ -->
+<!-- Slide Background                             -->
+<!-- ============================================ -->
+
+<defs>
+  <!-- STYLE -->
+  <style type="text/css"><![CDATA[
+    .title {fill:black; font-size: 50; font-family: Verdana, Helvetica, sans-serif } 
+    .titleshadow {fill:#ccaaaa; font-size: 50; font-family: Verdana, Helvetica, sans-serif } 
+    .normal {fill:black; font-size: 35; font-family: Verdana, Helvetica, sans-serif } 
+    .smaller {fill:black; font-size: 25; font-family: Verdana, Helvetica, sans-serif } 
+    .outercircle {fill:#88aa88 }
+    .innercircle {fill:#555555 }
+    ]]>
+  </style>
+  <!-- ENDSTYLE -->
+  <!-- BACKGRADIENT -->
+  <radialGradient id="radgrad" gradientUnits="objectBoundingBox" cx="10%" cy="90%" fx="10%" fy="90%" r="90%">
+    <stop offset="0%" style="stop-color:#2222aa"/>
+    <stop offset="100%" style="stop-color:#aaaaaa"/>
+  </radialGradient>
+  <!-- ENDBACKGRADIENT -->
+  <!-- NEXTARROW -->
+  <symbol id="arrow" viewBox="0 0 3 3">
+    <path d="M0,1L1.5,1L1.5,0L3,1.5L1.5,3L1.5,2L0,2Z"/>
+  </symbol>
+  <!-- ENDNEXTARROW -->
+</defs>
+
+<g>
+
+  <!-- BACKGROUND -->
+  <rect style="fill:url(#radgrad); stroke:#000000; stroke-width: 4" x="2" y="2" width="796" height="596"/>
+  <!-- ENDBACKGROUND -->
+  <!-- LOGO -->
+  <image x="710" y="10" width="80" height="100" xlink:href="csiro.svg"/>
+  <!-- ENDLOGO -->
+  <!-- URL -->
+  <text x="10" y="590" style="fill:#000000; font-family: Verdana; font-size:25">
+  http://www.cmis.csiro.au/svg
+  </text>
+  <!-- ENDURL -->
+
+  <!-- ARROWLINK -->
+  <a xlink:href="other.svg">
+    <use x="753" y="560" width="50" height="35" style="fill:#993333;stroke:#000000;stroke-width:0.1" xlink:href="#arrow"/>
+  </a>
+  <!-- ENDARROWLINK -->
+</g>
+
+<!-- ENDSLIDEHEADER -->
+
+<!-- ============================================ -->
+<!-- Slide Body                                   -->
+<!-- ============================================ -->
+
+<g>
+
+<text x="33" y="83" class="titleshadow">Transforms</text>
+<text x="30" y="80" class="title">Transforms</text>
+
+  <rect x="40" y="100" width="330" height="170" style="fill:none;stroke:black;stroke-width:3"/>
+  <text class="smaller" x="130" y="300">nested</text>
+  <!-- First, a translate -->
+  <g transform="translate(50,190)">
+    <g style="fill:none; stroke:red; stroke-width:3">
+      <line x1="0" y1="0" x2="50" y2="0" />
+      <line x1="0" y1="0" x2="0" y2="50" />
+    </g>
+    <text x="0" y="0" style="font-size:16; font-family:Verdana">
+      ....Translate(1)
+    </text>
+
+    <!-- Second, a rotate -->
+    <g transform="rotate(-45)">
+      <g style="fill:none; stroke:green; stroke-width:3">
+        <line x1="0" y1="0" x2="50" y2="0" />
+        <line x1="0" y1="0" x2="0" y2="50" />
+      </g>
+      <text x="0" y="0" style="font-size:16; font-family:Verdana">
+        ....Rotate(2)
+      </text>
+
+      <!-- Third, another translate -->
+      <g transform="translate(130,160)">
+        <g style="fill:none; stroke:blue; stroke-width:3">
+          <line x1="0" y1="0" x2="50" y2="0" />
+          <line x1="0" y1="0" x2="0" y2="50" />
+        </g>
+        <text x="0" y="0" style="font-size:16; font-family:Verdana">
+          ....Translate(3)
+        </text>
+      </g>
+    </g>
+  </g>
+
+<image xlink:href="duke-noshadow.svg" x="0" y="0" width="300" height="300"
+transform="translate(30, 320)"/>
+<image xlink:href="duke-noshadow.svg" x="0" y="0" width="300" height="300" 
+transform="translate(90, 25) translate(30, 320)"/>
+<g transform="translate(270, 320)">
+<image xlink:href="duke-noshadow.svg" x="0" y="0" width="300" height="300" 
+transform="rotate(40)"/>
+</g>
+<image xlink:href="duke-noshadow.svg" x="0" y="0" width="300" height="300" 
+transform="translate(250, 0) translate(30, 320) scale(2, 0.75)"/>
+<image xlink:href="duke-noshadow.svg" x="0" y="0" width="300" height="300" 
+transform="translate(10, 100) translate(30, 320) skewX(30)"/>
+<image xlink:href="duke-noshadow.svg" x="0" y="0" width="300" height="300" 
+transform="translate(200, 120) translate(30, 320) skewY(-20)"/>
+
+<image xlink:href="tshirt.jpg" x="0" y="0" width="180" height="230" transform="rotate(-25) translate(280,490)"/>
+
+
+<g transform="translate(420, 170)">
+<text x="0" y="0" transform="rotate(15)skewX(25)" style="font-size:60; font-family: 'Trebuchet MS'; fill:#aa8855; stroke:black">Transform</text>
+</g>
+
+
+
+
+</g>
+
+</svg>

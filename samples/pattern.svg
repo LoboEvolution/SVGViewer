@@ -1,0 +1,43 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20001102//EN" 
+  "http://www.w3.org/TR/2000/CR-SVG-20001102/DTD/svg-20001102.dtd">
+
+<svg width="4in" height="3in">
+  <defs>
+    <pattern id="TrianglePattern"
+         patternUnits="userSpaceOnUse"
+         x="0" y="0" width="25" height="25"
+         viewBox="0 0 10 10">
+       <path d="M 0 0 L 10 0 L 5 10 z" style="stroke:black; fill:red" /> 
+    </pattern>
+  
+    <pattern id="CirclePattern"
+         patternUnits="userSpaceOnUse"
+         x="0" y="0" width="25" height="25"
+         viewBox="0 0 10 10"
+         patternTransform="skewX(45)">
+        <circle cx="5" cy="5" r="4" style="stroke:black; fill:red" />
+    </pattern> 
+ 
+    <pattern width="20" height="20" id="mypattern" patternUnits="userSpaceOnUse">
+       <image width="20" height="20" xlink:href="csiro.gif" />
+    </pattern>
+
+   <pattern id="rectpattern" x="10" y="10" width="20" height="20" patternUnits="userSpaceOnUse">
+      <rect x="5" y="5" width="10" height="10" fill="blue"/>
+      <rect x="0" y="0" width="20" height="20" fill="none" stroke="black"/>
+   </pattern>
+
+
+  </defs>
+
+
+
+
+  <ellipse style="fill: url(#CirclePattern); stroke:black" 
+           cx = "120" cy="170" rx="40" ry="27" transform="rotate(15)" /> 
+  <rect x="155" y="105" width="150" height="150" style="fill:url(#mypattern); fill-opacity:0.5; 
+                  stroke:url(#TrianglePattern); stroke-width:8; stroke-opacity:0.5"/>
+
+  <rect x="0" y="0" width="100" height="100" stroke="black" fill="url(#rectpattern)"/>
+</svg>

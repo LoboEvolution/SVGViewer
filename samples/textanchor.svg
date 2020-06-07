@@ -1,0 +1,17 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20001102//EN" 
+  "http://www.w3.org/TR/2000/CR-SVG-20001102/DTD/svg-20001102.dtd">
+
+<svg width="400" height="400">
+
+<g style="font-size: 20; font-family: Helvetica; fill:black; stroke:none">
+  <text x="200" y="50">Default</text>
+  <text x="200" y="100" style="text-anchor:normal">Normal</text>
+  <text x="200" y="150" style="text-anchor:start">Start</text>
+  <text x="200" y="200" style="text-anchor:middle">Middle</text>
+ <a xlink:href="shapes.svg">
+   <text x="200" y="250" style="text-anchor:end; opacity:0.5">End</text>
+ </a>
+</g>
+
+</svg>

@@ -1,0 +1,16 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20001102//EN" 
+  "http://www.w3.org/TR/2000/CR-SVG-20001102/DTD/svg-20001102.dtd">
+
+<svg width="4in" height="3in">
+  <defs>
+    <style type="text/css">
+      <![CDATA[
+        .TitleText {fill:blue; font-size: 40; font-family: Helvetica }
+        rect {fill:red;} 
+      ]]>
+    </style>
+  </defs>
+  <text x="50" y="200" class="TitleText" style="stroke:black">Here is my title</text>
+  <rect x="100" y="100" width="50" height="40"/>
+</svg>

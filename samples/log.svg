@@ -1,0 +1,174 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20001102//EN" 
+  "http://www.w3.org/TR/2000/CR-SVG-20001102/DTD/svg-20001102.dtd">
+
+<svg width="250px" height="600px">
+
+<!-- First draw 3 rectangles - Log and depth tracks and the header box -->
+
+<g style="fill:white; stroke:blue; stroke-width:4;">
+  
+  <!-- Track border -->
+  <rect  x="10" y="40" width="150" height="500"/>
+
+  <!-- Depth Track -->    
+  <rect x="160" y="40" width="50" height="500">
+    <desc> Depth Track </desc>
+  </rect>
+  
+  <!-- Track header -->
+  <rect  x="10" y="10" width="150" height="30"/> 
+</g>
+
+<!-- Next draw the log and depth reference grids -->
+
+<path style="stroke:black; fill:none; stroke-width:.3; stroke-dasharray:3 3;"
+d="
+M 25 40 v 500 
+M 40 40 v 500 
+M 55 40 v 500 
+M 70 40 v 500 
+
+M 100 40 v 500 
+M 115 40 v 500 
+M 130 40 v 500 
+M 145 40 v 500 
+
+M 10 90 h 150
+M 10 140 h 150
+M 10 190 h 150
+M 10 240 h 150
+M 10 290 h 150
+M 10 340 h 150
+M 10 390 h 150
+M 10 440 h 150
+M 10 490 h 150
+"/>
+
+<!-- This is the heavier, solid line in the middle of the log track -->
+<path    style="stroke:black; stroke-width:.5;"
+d=" M 85 40 v 500" />
+
+
+<!-- Depth Annotation -->
+<g
+style="font-size:14; 
+       font-weight:bold; 
+       stroke:black; 
+       stroke-width:.1;  
+       text-anchor:start;
+       fill:black;">
+
+   <text x=" 165 " y=" 95  "> 1820 </text>
+   <text x=" 165 " y=" 145 "> 1830 </text>
+   <text x=" 165 " y=" 195 "> 1840 </text>
+   <text x=" 165 " y=" 245 "> 1850 </text>
+   <text x=" 165 " y=" 295 "> 1860 </text>
+   <text x=" 165 " y=" 345 "> 1870 </text>
+   <text x=" 165 " y=" 395 "> 1880 </text>
+   <text x=" 165 " y=" 445 "> 1890 </text>
+   <text x=" 165 " y=" 495 "> 1900 </text>
+</g>
+
+
+<!-- Header Anotation -->
+<g
+style="font-size:14; 
+       font-weight:bold; 
+       stroke:black; 
+       stroke-width:.1; 
+       text-anchor:start;
+       fill:black;">
+
+   <text x=" 13 " y=" 27 "> 50 </text>
+   <text x=" 40 " y=" 27 "> Gamma Ray </text>
+   <text x=" 132 " y=" 27 "> 100 </text>
+</g>
+
+<!-- Horizonal line in header box -->
+<path 
+   style="
+    fill:none;
+    stroke:red; 
+    stroke-width:2;
+    stroke-dasharray: 3 3;"
+d="M 12 32 h 146" />
+
+<!-- GR Log -->
+<path 
+   style="
+    fill:none;
+    stroke:red; 
+    stroke-width:2;
+    stroke-dasharray: 3 3;"
+d ="M
+115	40
+105.9	45
+93.4	52.5
+76.4	60
+61.1	67.5
+53.7	75
+61.4	82.5
+68.9	90
+76.1	97.5
+65.4	105
+63.2	112.5
+67.2	120
+83.5	127.5
+90.1	135
+100.4	142.5
+104.4	150
+104.9	157.5
+104.4	165
+111.4	172.5
+124.2	180
+127.7	187.5
+127.2	195
+127.0	202.5
+124.0	210
+113.0	217.5
+95.3	225
+74.8	232.5
+54.2	240
+37.8	247.5
+27.8	255
+25.8	262.5
+31.8	270
+39.2	277.5
+39.4	285
+31.9	292.5
+25.5	300
+26.3	307.5
+29.4	315
+30.9	322.5
+34.2	330
+33.6	337.5
+32.0	345
+37.8	352.5
+41.6	360
+50.2	367.5
+51.2	375
+49.2	382.5
+47.4	390
+37.2	397.5
+37.8	405
+39.5	412.5
+51.2	420
+61.2	427.5
+67.2	435
+66.2	442.5
+72.7	450
+77.7	457.5
+82.6	465
+74.1	472.5
+82.4	480
+98.2	487.5
+117.9	495
+107.1	502.5
+97.4	510
+78.9	517.5
+83.7	525
+83.2	532.5
+84.0	540
+"/>
+</svg>

@@ -1,0 +1,90 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20001102//EN" 
+  "http://www.w3.org/TR/2000/CR-SVG-20001102/DTD/svg-20001102.dtd">
+
+<svg width="400" height="400">
+ 
+   <defs>
+
+    <symbol id="TouristInfo" viewBox="0 0 10 10">
+      <rect x="1" y="1" width="8" height="8" rx="2" ry="2" style="fill:none; stroke:blue; stroke-width:0.5"/>
+      <text x="4" y="8" style="fill:blue; stroke:blue; stroke-width:0.5; font-family:'Times New Roman'; font-size:9">
+        i
+      </text>
+    </symbol>
+
+    <symbol id="Hotel" viewBox="0 0 10 10">
+      <path d="M 0.5 2.5 h 1 v 6 h 7 v -6 h 1 L 5 0 z" style="fill:black"/>
+      <text x="2.5" y="8" style="fill:white; stroke:white; stroke-width:0.5;  font-family:'Arial'; font-size:7">
+        H
+      </text>
+    </symbol>
+
+    <symbol id="CaravanPark" viewBox="0 0 10 10">
+      <rect x="1" y="3" width="8" height="6" rx="2" ry="1.5" style="fill:black;"/>
+      <circle cx="6" cy="9" r="1" style="fill:black; stroke:white; stroke-width:0.5"/>
+	<rect x="5" y="4" width="3" height="2" rx="0.5" ry="0.5" style="fill:white"/>
+      <rect x="2" y="4" width="1.5" height="4" rx="0.5" ry="0.5" style="fill:white"/>
+     	<rect x="0" y="8.25" width="3" height="0.75" style="fill:black"/>
+    </symbol>
+
+    <symbol id="Parking" viewBox="0 0 10 10">
+      <rect x="1" y="1" width="8" height="8" rx="2" ry="2" style="fill:blue"/>
+      <text x="2.5" y="8" style="fill:white; stroke:white; stroke-width:0.5; font-family:'Arial'; font-size:8">
+        P
+      </text>
+    </symbol>
+
+    <symbol id="Hospital" viewBox="0 0 10 10">
+      <path d="M 4 2 h 2 v 2 h 2 v 2 h -2 v 2 h -2 v -2 h -2 v -2 h 2 z" style="fill:red"/>
+    </symbol>
+
+    <symbol id="Police" viewBox="0 0 10 10">
+      <path d="M 5 2 L 7 8 L 2 4.25 L 8 4.25 L 3 8 z" style="fill:red; fill-rule:nonzero"/>
+    </symbol>
+
+
+    <symbol id="Motel" viewBox="0 0 10 10">
+      <path d="M 0.5 2.5 h 1 v 6 h 7 v -6 h 1 L 5 0 z" style="fill:black"/>
+      <text x="2" y="8" style="fill:white; stroke:white; stroke-width:0.5;  font-family:'Arial'; font-size:7">
+        M
+      </text>
+    </symbol>
+
+    <symbol id="PostOffice" viewBox="0 0 10 10">
+     <line x1="1" y1="8" x2="4" y2="5" style="stroke:red; fill:none; stroke-width:0.75"/>
+     <line x1="9" y1="8" x2="6" y2="5" style="stroke:red; fill:none; stroke-width:0.75"/>
+     <polyline points="1 2 5 6 9 2" style="stroke:red; fill:white; stroke-width:0.75"/>
+     <rect x="1" y="2" width="8" height="6" style="stroke:red; fill:none; stroke-width:0.75"/>
+    </symbol>
+
+
+
+  </defs>
+
+  <use x="5" y="5" width="10" height="10"
+       xlink:href="#TouristInfo" />
+
+  <use x="25" y="5" width="10" height="10"
+       xlink:href="#Hotel" />
+
+  <use x="45" y="5" width="10" height="10"
+       xlink:href="#CaravanPark" />
+
+  <use x="65" y="5" width="10" height="10"
+       xlink:href="#Parking" />
+
+  <use x="5" y="25" width="10" height="10"
+       xlink:href="#Hospital" />
+
+  <use x="25" y="25" width="10" height="10"
+       xlink:href="#Police" />
+
+  <use x="45" y="25" width="10" height="10"
+       xlink:href="#Motel" />
+
+  <use x="65" y="25" width="10" height="10"
+       xlink:href="#PostOffice" />
+
+
+</svg>

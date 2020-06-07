@@ -1,0 +1,95 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20001102//EN" 
+  "http://www.w3.org/TR/2000/CR-SVG-20001102/DTD/svg-20001102.dtd">
+
+<!-- SLIDEHEADER -->
+<svg width="800" height="600">
+
+<!-- ============================================ -->
+<!-- Slide Background                             -->
+<!-- ============================================ -->
+
+<defs>
+  <!-- STYLE -->
+  <style type="text/css"><![CDATA[
+    .title {fill:black; font-size: 50; font-family: Verdana, Helvetica, sans-serif } 
+    .titleshadow {fill:#ccaaaa; font-size: 50; font-family: Verdana, Helvetica, sans-serif } 
+    .normal {fill:black; font-size: 35; font-family: Verdana, Helvetica, sans-serif } 
+    .smaller {fill:black; font-size: 25; font-family: Verdana, Helvetica, sans-serif } 
+    .outercircle {fill:#88aa88 }
+    .innercircle {fill:#555555 }
+    ]]>
+  </style>
+  <!-- ENDSTYLE -->
+  <!-- BACKGRADIENT -->
+  <radialGradient id="radgrad" gradientUnits="objectBoundingBox" cx="10%" cy="90%" fx="10%" fy="90%" r="90%">
+    <stop offset="0%" style="stop-color:#2222aa"/>
+    <stop offset="100%" style="stop-color:#aaaaaa"/>
+  </radialGradient>
+  <!-- ENDBACKGRADIENT -->
+  <!-- NEXTARROW -->
+  <symbol id="arrow" viewBox="0 0 3 3">
+    <path d="M0,1L1.5,1L1.5,0L3,1.5L1.5,3L1.5,2L0,2Z"/>
+  </symbol>
+  <!-- ENDNEXTARROW -->
+</defs>
+
+<g>
+
+  <!-- BACKGROUND -->
+  <rect style="fill:url(#radgrad); stroke:#000000; stroke-width: 4" x="2" y="2" width="796" height="596"/>
+  <!-- ENDBACKGROUND -->
+  <!-- LOGO -->
+  <image x="710" y="10" width="80" height="100" xlink:href="csiro.svg"/>
+  <!-- ENDLOGO -->
+  <!-- URL -->
+  <text x="10" y="590" style="fill:#000000; font-family: Verdana; font-size:25">
+  http://www.cmis.csiro.au/svg
+  </text>
+  <!-- ENDURL -->
+
+  <!-- ARROWLINK -->
+  <a xlink:href="shapes.svg">
+    <use x="753" y="560" width="50" height="35" style="fill:#993333;stroke:#000000;stroke-width:0.1" xlink:href="#arrow"/>
+  </a>
+  <!-- ENDARROWLINK -->
+</g>
+
+<!-- ENDSLIDEHEADER -->
+
+<!-- ============================================ -->
+<!-- Slide Body                                   -->
+<!-- ============================================ -->
+
+<g>
+
+<text x="33" y="83" class="titleshadow">What is the Toolkit?</text>
+<text x="30" y="80" class="title">What is the Toolkit?</text>
+
+<circle cx="90" cy="180" r="7" class="outercircle"/>
+<circle cx="90" cy="180" r="3" class="innercircle"/>
+<text x="120" y="190" class="normal">Open Source (BSD style)</text>
+
+<circle cx="90" cy="240" r="7" class="outercircle"/>
+<circle cx="90" cy="240" r="3" class="innercircle"/>
+<text x="120" y="250" class="normal">100% pure Java</text>
+
+<text x="120" y="300" class="smaller">(Java2D, JDK 1.2 or higher, JavaBean)</text>
+
+<circle cx="90" cy="350" r="7" class="outercircle"/>
+<circle cx="90" cy="350" r="3" class="innercircle"/>
+<text x="120" y="360" class="normal">Apache Xerces Java XML Parser</text>
+
+<circle cx="90" cy="410" r="7" class="outercircle"/>
+<circle cx="90" cy="410" r="3" class="innercircle"/>
+<text x="120" y="420" class="normal">SteadyState CSS2 Engine</text>
+
+<circle cx="90" cy="470" r="7" class="outercircle"/>
+<circle cx="90" cy="470" r="3" class="innercircle"/>
+<text x="120" y="480" class="normal">Other tools</text>
+
+
+
+</g>
+
+</svg>

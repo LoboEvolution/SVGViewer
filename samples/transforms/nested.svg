@@ -1,0 +1,47 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20001102//EN" 
+  "http://www.w3.org/TR/2000/CR-SVG-20001102/DTD/svg-20001102.dtd">
+
+<svg width="400px" height="150px">
+  <title>Nested</title>
+  <desc>Example Nested - Nested transformations</desc>
+  
+  <g style="fill:none; stroke:black; stroke-width:3">
+    <!-- Draw the axes of the original coordinate system -->
+    <line x1="0" y1="1.5" x2="400" y2="1.5" />
+    <line x1="1.5" y1="0" x2="1.5" y2="150" />
+  </g>
+
+  <!-- First, a translate -->
+  <g transform="translate(50,90)">
+    <g style="fill:none; stroke:red; stroke-width:3">
+      <line x1="0" y1="0" x2="50" y2="0" />
+      <line x1="0" y1="0" x2="0" y2="50" />
+    </g>
+    <text x="0" y="0" style="font-size:16; font-family:Verdana">
+      ....Translate(1)
+    </text>
+
+    <!-- Second, a rotate -->
+    <g transform="rotate(-45)">
+      <g style="fill:none; stroke:green; stroke-width:3">
+        <line x1="0" y1="0" x2="50" y2="0" />
+        <line x1="0" y1="0" x2="0" y2="50" />
+      </g>
+      <text x="0" y="0" style="font-size:16; font-family:Verdana">
+        ....Rotate(2)
+      </text>
+
+      <!-- Third, another translate -->
+      <g transform="translate(130,160)">
+        <g style="fill:none; stroke:blue; stroke-width:3">
+          <line x1="0" y1="0" x2="50" y2="0" />
+          <line x1="0" y1="0" x2="0" y2="50" />
+        </g>
+        <text x="0" y="0" style="font-size:16; font-family:Verdana">
+          ....Translate(3)
+        </text>
+      </g>
+    </g>
+  </g>
+</svg>
